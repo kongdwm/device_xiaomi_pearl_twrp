@@ -1,0 +1,2 @@
+# device_xiaomi_pearl_twrp
+ 
