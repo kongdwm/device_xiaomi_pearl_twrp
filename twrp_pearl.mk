@@ -12,7 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
-$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from pearl device
 $(call inherit-product, device/xiaomi/pearl/device.mk)
