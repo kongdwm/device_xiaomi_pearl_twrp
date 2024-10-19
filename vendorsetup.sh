@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo twrp_pearl-eng
+COMMON_LUNCH_CHOICES in your AndroidProducts.mk
