@@ -1,4 +1,4 @@
-DEVICE_PATH := device/vendor/pearl
+DEVICE_PATH := device/xiaomi/pearl
 
 # Architecture
 TARGET_ARCH := arm64
@@ -77,10 +77,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VNDK_VERSION := current
 
 # Vendor_boot recovery ramdisk
+BOARD_USES_RECOVERY_AS_BOOT := 
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-
-# Boot recovery ramdisk
-#BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := 
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := 
+TW_LOAD_VENDOR_BOOT_MODULES := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
