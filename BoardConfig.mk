@@ -77,8 +77,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VNDK_VERSION := current
 
 # Vendor_boot recovery ramdisk
-BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
