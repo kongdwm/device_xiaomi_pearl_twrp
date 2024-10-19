@@ -106,7 +106,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-＃ Treble
+# Treble
 BOARD_VNDK_VERSION := current
 
 # Vendor_boot recovery ramdisk
