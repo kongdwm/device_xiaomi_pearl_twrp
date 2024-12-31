@@ -13,14 +13,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
 PRODUCT_PACKAGES += \
     bootctrl.mt6895
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6895 \
-    libgptutils \
-    libz \
-    libcutils
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
