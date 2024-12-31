@@ -9,7 +9,3 @@ LOCAL_PATH := $(call my-dir)
 
 COMMON_LUNCH_CHOICES := \
     twrp_pearl-eng
-
-ifeq ($(TARGET_DEVICE),pearl)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
