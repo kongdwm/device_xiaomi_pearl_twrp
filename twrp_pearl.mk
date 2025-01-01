@@ -5,14 +5,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk) # vab加载到vendor boot里使用
 
-# Inherit some common Omni stuff.
+# Inherit from TWRP product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from pearl device
+# Device specific configs
 $(call inherit-product, device/xiaomi/pearl/device.mk)
 
 PRODUCT_DEVICE := pearl
