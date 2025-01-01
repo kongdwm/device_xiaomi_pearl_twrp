@@ -10,27 +10,10 @@ DEVICE_PATH := device/xiaomi/pearl
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    product \
-    boot \
-    vbmeta_vendor \
-    vendor_dlkm \
-    system_ext \
-    vendor \
-    odm \
-    system \
-    vbmeta_system \
-    odm_dlkm
-
 # Vendor_boot recovery ramdisk
 BOARD_USES_RECOVERY_AS_BOOT := 
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := 
-BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := 
-TW_LOAD_VENDOR_BOOT_MODULES := true
 
 # Architecture
 TARGET_ARCH := arm64
