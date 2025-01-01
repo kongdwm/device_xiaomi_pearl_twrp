@@ -24,6 +24,9 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     odm_dlkm
 
+# Vendor_boot recovery ramdisk
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -95,9 +98,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
-
-# Vendor_boot recovery ramdisk
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
